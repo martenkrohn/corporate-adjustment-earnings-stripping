@@ -1,6 +1,7 @@
 cff-version: 1.2.0
 message: "Please cite the thesis when referring to this research."
 type: software
+repository-code: "https://github.com/martenkrohn/corporate-adjustment-earnings-stripping"
 title: "Corporate Adjustment Beyond Leverage: Evidence from European Firms under Earnings-Stripping Rules"
 authors:
   - family-names: Krohn
