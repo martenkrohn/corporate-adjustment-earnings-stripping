@@ -1,0 +1,66 @@
+\begin{table}[htbp]
+   \caption{\label{tab:appendix_robustness_firm_heterogeneity} Debt-to-assets regressions by pre-reform exposure proxy}
+   \centering
+   \fontsize{6.5pt}{7.3pt}\selectfont
+   \begin{adjustbox}{max width=\textwidth}
+   \begin{tabular}{lcc}
+      \toprule
+                                  & Leverage by risk quartile & Leverage by accounting pressure \\
+      Model:                      & (1)                         & (2) \\
+      \midrule
+      \multicolumn{3}{l}{\textit{Interaction terms}} \\
+      Treat $\times$ Post2019     & 0.0031                      & -0.0188$^{**}$ \\
+                                  & (0.0125)                    & (0.0081) \\
+      Q2 $\times$ Post2019        & 0.0181$^{**}$               &  \\
+                                  & (0.0085)                    &  \\
+      Q3 $\times$ Post2019        & 0.0133                      &  \\
+                                  & (0.0176)                    &  \\
+      Q4 $\times$ Post2019        & 0.0325$^{***}$              &  \\
+                                  & (0.0082)                    &  \\
+      Treat $\times$ Post2019 $\times$ Q2 & -0.0164            &  \\
+                                  & (0.0145)                    &  \\
+      Treat $\times$ Post2019 $\times$ Q3 & -0.0201            &  \\
+                                  & (0.0198)                    &  \\
+      Treat $\times$ Post2019 $\times$ Q4 & -0.0337$^{***}$    &  \\
+                                  & (0.0109)                    &  \\
+      High pressure $\times$ Post2019 &                             & -0.0419$^{***}$ \\
+                                  &                             & (0.0076) \\
+      Treat $\times$ Post2019 $\times$ High pressure &             & 0.0042 \\
+                                  &                             & (0.0094) \\
+      \addlinespace
+      \multicolumn{3}{l}{\textit{Firm and country-year controls}} \\
+      Tangibility                 & 0.2056$^{***}$               & 0.2244$^{***}$ \\
+                                  & (0.0415)                    & (0.0353) \\
+      EBITDA/assets               & -0.1419$^{***}$              & -0.1247$^{***}$ \\
+                                  & (0.0303)                    & (0.0308) \\
+      Log assets                  & 0.0257$^{***}$               & 0.0235$^{***}$ \\
+                                  & (0.0079)                    & (0.0069) \\
+      Country-sector sales growth & 0.0001                      & 0.0010 \\
+                                  & (0.0036)                    & (0.0032) \\
+      Corporate tax rate          & -0.0010$^{*}$                & -0.0017$^{**}$ \\
+                                  & (0.0006)                    & (0.0006) \\
+      GDP growth                  & -0.0011                     & -0.0010 \\
+                                  & (0.0008)                    & (0.0007) \\
+      Inflation                   & 0.0012                      & 0.0014 \\
+                                  & (0.0010)                    & (0.0010) \\
+      Long-term interest rate     & 0.0012                      & 0.0014 \\
+                                  & (0.0016)                    & (0.0020) \\
+      Rule of law                 & -0.0041$^{*}$                & -0.0031 \\
+                                  & (0.0022)                    & (0.0023) \\
+      Regulatory quality          & 0.0032$^{**}$                & 0.0029$^{**}$ \\
+                                  & (0.0012)                    & (0.0013) \\
+      Control of corruption       & -0.0004                     & -0.0006 \\
+                                  & (0.0009)                    & (0.0010) \\
+      \midrule
+      Firm fixed effects          & Yes                         & Yes \\
+      Year fixed effects          & Yes                         & Yes \\
+      Firms                       & 1,958                       & 1,974 \\
+      Observations                & 19,431                      & 19,493 \\
+      Countries                   & 20                          & 20 \\
+      Adjusted R$^2$              & 0.702                       & 0.702 \\
+      Within R$^2$                & 0.057                       & 0.066 \\
+      \bottomrule
+   \end{tabular}
+   \end{adjustbox}
+   \parbox{\textwidth}{\vspace{0.35em}\fontsize{6.5pt}{7.3pt}\selectfont\textit{Notes:} The dependent variable is debt-to-assets; coefficients are in ratio units. Column~(1) uses Q1 as the omitted operational-risk group. Column~(2) uses low accounting pressure as the omitted group. Operational risk and accounting pressure are defined in the notes to Table~\ref{tab:robustness_firm_heterogeneity}. Both specifications include the full leverage control set, firm fixed effects, and year fixed effects. Standard errors are clustered by headquarters country and appear in parentheses. $^{***}p<0.01$, $^{**}p<0.05$, and $^{*}p<0.10$.}
+\end{table}

@@ -1,0 +1,31 @@
+% Constructed from the approved matching/reweighting event-study pre-trend outputs in
+% R/data/workspaces/{02.1_leverage_robustness,03.1_risk_taking_robustness,
+% 05.1_cash_holdings_robustness}/approved/models/.
+\begin{table}[htbp]
+    \caption{Joint pre-trend tests after matching and \acs{ATT} reweighting}
+    \label{tab:appendix_robustness_matching_dynamic_pretrends}
+    \centering
+    \footnotesize
+    \begin{tabular}{lrrrr}
+        \toprule
+        & \multicolumn{2}{c}{PS match} & \multicolumn{2}{c}{\acs{ATT}} \\
+        \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+        Outcome & Wald $\chi^2$ & $p$-value & Wald $\chi^2$ & $p$-value \\
+        \midrule
+        \multicolumn{5}{l}{\textit{Capital structure}} \\
+        Debt-to-assets & 4.275 & 0.3700 & 4.320 & 0.3645 \\
+        Log equity & 2.076 & 0.7218 & 9.989 & 0.0406 \\
+        Log current debt & 1.954 & 0.7442 & 1.266 & 0.8671 \\
+        Log long-term debt & 45.253 & $<0.0001$ & 36.022 & $<0.0001$ \\
+        \addlinespace
+        \multicolumn{5}{l}{\textit{Operational risk}} \\
+        Adjusted \textit{EarnVol} & 13.677 & 0.0034 & 9.218 & 0.0265 \\
+        Unadjusted \textit{EarnVol} & 12.427 & 0.0061 & 14.092 & 0.0028 \\
+        \addlinespace
+        \multicolumn{5}{l}{\textit{Cash holdings}} \\
+        Cash/assets & 8.306 & 0.0810 & 8.987 & 0.0614 \\
+        \bottomrule
+    \end{tabular}
+
+    \parbox{\textwidth}{\vspace{0.35em}\footnotesize\textit{Notes:} The propensity-score (PS) design is the selected 1:1 nearest-neighbor match without replacement and with a 0.001 caliper. \acs{ATT} denotes inverse-propensity reweighting. For capital structure and cash holdings, 2018 is omitted and the tests jointly evaluate the 2014--2017 treated-year coefficients. For operational risk, 2016 is omitted and the tests evaluate the 2013--2015 forward-window anchor years. All models retain the corresponding outcome-specific controls, firm and year fixed effects, and inference clustered by headquarters country. Failure to reject does not establish parallel trends.}
+\end{table}

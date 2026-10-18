@@ -1,0 +1,67 @@
+% Constructed from the approved baseline event-study outputs in
+% R/data/workspaces/03_risk_taking/approved/models/.
+\begin{table}[htbp]
+   \caption{\label{tab:appendix_event_risk} Earnings-volatility event-study regressions}
+   \centering
+   \scriptsize
+   \begin{tabular}{lcc}
+      \tabularnewline \midrule \midrule
+                              & Adjusted EarnVol & Unadjusted EarnVol \\
+      Model:                  & (1)              & (2) \\
+      \midrule
+      \emph{Variables} \\
+      Treat $\times$ 2013     & -0.7385          & 0.1089 \\
+                              & (1.342)          & (0.4791) \\
+      Treat $\times$ 2014     & -1.091           & 0.1203 \\
+                              & (1.171)          & (0.4788) \\
+      Treat $\times$ 2015     & 0.4758           & 0.6482$^{*}$ \\
+                              & (0.8390)         & (0.3277) \\
+      Treat $\times$ 2017     & -1.027           & -0.5831$^{*}$ \\
+                              & (0.8203)         & (0.3133) \\
+      Treat $\times$ 2018     & -2.809$^{***}$   & -0.8950$^{***}$ \\
+                              & (0.8698)         & (0.1969) \\
+      Treat $\times$ 2019     & -3.786$^{***}$   & -1.084$^{***}$ \\
+                              & (0.8832)         & (0.2776) \\
+      Treat $\times$ 2020     & -2.888$^{***}$   & -0.4086 \\
+                              & (0.7518)         & (0.4209) \\
+      Treat $\times$ 2021     & -1.042           & -0.1333 \\
+                              & (0.6303)         & (0.3022) \\
+      Log assets              & -3.900$^{***}$   & -2.742$^{***}$ \\
+                              & (0.6153)         & (0.2847) \\
+      EBIT/assets             & -19.08$^{***}$   & -19.41$^{***}$ \\
+                              & (2.648)          & (1.391) \\
+      Log sales growth        & -0.7559$^{***}$  & -0.2338 \\
+                              & (0.2551)         & (0.1459) \\
+      Log sales               & 3.230$^{***}$    & 2.244$^{***}$ \\
+                              & (0.8065)         & (0.3569) \\
+      Corporate tax rate      & -0.0586          & -0.0361 \\
+                              & (0.1086)         & (0.0416) \\
+      GDP growth              & -0.0221          & -0.0517 \\
+                              & (0.0825)         & (0.0365) \\
+      Inflation               & 0.3144           & -0.0179 \\
+                              & (0.4034)         & (0.1728) \\
+      Long-term interest rate & -0.0048          & -0.1356$^{*}$ \\
+                              & (0.1647)         & (0.0705) \\
+      Rule of law             & -0.0705          & 0.0055 \\
+                              & (0.1671)         & (0.0763) \\
+      Regulatory quality      & 0.0032           & 0.0028 \\
+                              & (0.1146)         & (0.0721) \\
+      Control of corruption   & 0.0645           & 0.0268 \\
+                              & (0.1045)         & (0.0489) \\
+      \midrule
+      \emph{Fixed-effects} \\
+      Firm                    & Yes              & Yes \\
+      Year                    & Yes              & Yes \\
+      \midrule
+      \emph{Fit statistics} \\
+      Firms                   & 2,183            & 2,183 \\
+      Years                   & 9                & 9 \\
+      Observations            & 18,562           & 18,562 \\
+      Adjusted R$^2$          & 0.492            & 0.593 \\
+      Within R$^2$            & 0.043            & 0.102 \\
+      \midrule \midrule & \tabularnewline
+   \end{tabular}
+
+   \par \raggedright
+   \textit{Notes:} The table reports the main full-control event-study specifications. The coefficients are treated-by-base-year interactions relative to the omitted reference base year 2016. Each base year marks the beginning of a forward three-year window covering years $t$ through $t+2$. Standard errors are clustered by headquarters country (20 clusters) and appear in parentheses. Both outcomes equal 100 times the forward-looking three-year standard deviation of EBIT/assets, so coefficients are expressed in percentage points (pp). Adjusted EarnVol removes the country-industry-year benchmark before volatility is calculated. $^{***}p<0.01$, $^{**}p<0.05$, and $^{*}p<0.10$.
+\end{table}

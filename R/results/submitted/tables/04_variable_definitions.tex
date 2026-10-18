@@ -1,0 +1,44 @@
+\begin{table}[H]
+\centering
+\footnotesize
+\caption{Definitions of main outcomes and firm-level controls}
+\label{tab:data_variable_definitions}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{>{\raggedright\arraybackslash}p{3.3cm}>{\raggedright\arraybackslash}p{9.0cm}>{\raggedright\arraybackslash}p{2.0cm}}
+\toprule
+Variable & Construction & Scale \\
+\midrule
+\multicolumn{3}{l}{\textit{Outcomes}} \\
+\addlinespace[0.2em]
+Debt-to-assets & Long-term debt plus short-term loans and debt, divided by total assets & Ratio \\
+\addlinespace[0.35em]
+Adjusted \textit{EarnVol} & 100 times the complete forward three-year sample standard deviation of EBIT/assets after subtracting the country--two-digit-NACE--year peer benchmark & $100 \times \mathrm{SD}$ \\
+\addlinespace[0.35em]
+Unadjusted \textit{EarnVol} & 100 times the complete forward three-year sample standard deviation of unadjusted EBIT/assets & $100 \times \mathrm{SD}$ \\
+\addlinespace[0.35em]
+Cash/assets & Cash and cash equivalents divided by total assets & Ratio \\
+\addlinespace[0.55em]
+\multicolumn{3}{l}{\textit{Firm-level controls}} \\
+\addlinespace[0.2em]
+Log assets & Natural logarithm of total assets measured in millions of USD & Log level \\
+\addlinespace[0.35em]
+Log sales & Natural logarithm of operating revenue measured in millions of USD & Log level \\
+\addlinespace[0.35em]
+EBIT/assets & EBIT divided by total assets & Ratio \\
+\addlinespace[0.35em]
+EBITDA/assets & EBITDA divided by total assets & Ratio \\
+\addlinespace[0.35em]
+Tangibility & Tangible fixed assets divided by total assets & Ratio \\
+\addlinespace[0.35em]
+Log sales growth & Change in log operating revenue between consecutive firm-years & Log difference \\
+\addlinespace[0.35em]
+Country-sector sales growth & Country--two-digit-NACE--year mean of firm-level log sales growth & Log difference \\
+\bottomrule
+\end{tabular}
+\vspace{0.2em}
+\begin{minipage}{0.98\textwidth}
+\scriptsize
+\textit{Notes:} Logs are defined only for strictly positive values. Continuous constructed variables are winsorized at the pooled 1st and 99th percentiles. Complete \textit{EarnVol} windows run from base year $t$ through $t+2$. Peer benchmarks are leave-one-out in cells with at least two usable observations; singleton cells are benchmarked against their own observation. Country-level controls are described in the text.
+\end{minipage}
+\end{table}

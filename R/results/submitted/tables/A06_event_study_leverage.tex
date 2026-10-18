@@ -1,0 +1,69 @@
+% Constructed from the approved baseline event-study outputs in
+% R/data/workspaces/02_leverage_baseline/approved/models/.
+\begin{table}[htbp]
+   \caption{\label{tab:appendix_event_leverage} Capital-structure event-study regressions}
+   \centering
+   \scriptsize
+   \begin{tabular}{lcccc}
+      \tabularnewline \midrule \midrule
+                              & Debt/assets     & Log equity      & Log current debt & Log long-term debt \\
+      Model:                  & (1)             & (2)             & (3)              & (4) \\
+      \midrule
+      \emph{Variables} \\
+      Treat $\times$ 2014     & 0.0093          & -0.0027         & 0.0105           & -0.0098 \\
+                              & (0.0115)        & (0.0338)        & (0.1178)         & (0.0726) \\
+      Treat $\times$ 2015     & 0.0131$^{*}$    & -0.0431         & -0.0418          & 0.1358$^{**}$ \\
+                              & (0.0074)        & (0.0264)        & (0.1045)         & (0.0566) \\
+      Treat $\times$ 2016     & 0.0141$^{*}$    & -0.0315         & -0.0833          & 0.1365$^{**}$ \\
+                              & (0.0070)        & (0.0212)        & (0.0859)         & (0.0583) \\
+      Treat $\times$ 2017     & 0.0042          & -0.0129         & -0.0567          & -0.0036 \\
+                              & (0.0045)        & (0.0192)        & (0.0711)         & (0.0526) \\
+      Treat $\times$ 2019     & -0.0063         & 0.0169          & 0.0046           & -0.0205 \\
+                              & (0.0065)        & (0.0160)        & (0.0654)         & (0.0737) \\
+      Treat $\times$ 2020     & -0.0276$^{***}$ & 0.0775$^{***}$  & -0.1153          & -0.1924$^{**}$ \\
+                              & (0.0093)        & (0.0195)        & (0.0827)         & (0.0815) \\
+      Treat $\times$ 2021     & -0.0185$^{*}$   & 0.0387          & -0.2240$^{**}$   & -0.1446 \\
+                              & (0.0100)        & (0.0268)        & (0.0950)         & (0.0852) \\
+      Treat $\times$ 2022     & -0.0060         & 0.0260          & -0.1824          & -0.0607 \\
+                              & (0.0108)        & (0.0163)        & (0.1260)         & (0.0822) \\
+      Treat $\times$ 2023     & -0.0058         & 0.0102          & -0.2381$^{**}$   & -0.1032 \\
+                              & (0.0115)        & (0.0165)        & (0.1061)         & (0.0979) \\
+      Tangibility             & 0.2111$^{***}$   & -0.5680$^{***}$ & 0.3512$^{**}$    & 1.693$^{***}$ \\
+                              & (0.0325)        & (0.1185)        & (0.1595)         & (0.4100) \\
+      EBITDA/assets           & -0.1094$^{***}$ & 0.3385$^{***}$  & -0.8930$^{***}$  & -0.9136$^{***}$ \\
+                              & (0.0276)        & (0.0778)        & (0.2104)         & (0.1057) \\
+      Log assets              & 0.0120          & 1.021$^{***}$   & 0.8858$^{***}$   & 1.016$^{***}$ \\
+                              & (0.0076)        & (0.0302)        & (0.0264)         & (0.0609) \\
+      Country-sector sales growth & -0.0009     & -0.0438$^{***}$ & -0.0042          & 0.0897$^{**}$ \\
+                              & (0.0031)        & (0.0143)        & (0.0401)         & (0.0363) \\
+      Corporate tax rate      & -0.0015$^{**}$  & 0.0016          & -0.0026          & -0.0103$^{***}$ \\
+                              & (0.0006)        & (0.0012)        & (0.0065)         & (0.0032) \\
+      GDP growth              & -0.0003         & 0.0004          & -0.0123$^{*}$    & 0.0008 \\
+                              & (0.0006)        & (0.0019)        & (0.0062)         & (0.0038) \\
+      Inflation               & 0.0010          & -0.0088$^{**}$  & 0.0068           & 0.0062 \\
+                              & (0.0010)        & (0.0032)        & (0.0165)         & (0.0120) \\
+      Long-term interest rate & 0.0022          & 0.0090$^{**}$   & 0.0517$^{**}$    & -0.0084 \\
+                              & (0.0016)        & (0.0037)        & (0.0187)         & (0.0156) \\
+      Rule of law             & -0.0027         & 0.0009          & -0.0069          & -0.0076 \\
+                              & (0.0021)        & (0.0043)        & (0.0164)         & (0.0178) \\
+      Regulatory quality      & 0.0015          & -0.0020         & 0.0271$^{**}$    & 0.0207$^{**}$ \\
+                              & (0.0013)        & (0.0029)        & (0.0109)         & (0.0086) \\
+      Control of corruption   & $-7.87\times 10^{-5}$ & -0.0040$^{*}$ & -0.0037          & 0.0065 \\
+                              & (0.0007)        & (0.0021)        & (0.0106)         & (0.0063) \\
+      \midrule
+      \emph{Fixed-effects} \\
+      Firm                    & Yes              & Yes              & Yes               & Yes \\
+      Year                    & Yes              & Yes              & Yes               & Yes \\
+      \midrule
+      \emph{Fit statistics} \\
+      Firms                   & 2,655            & 2,591            & 2,150             & 2,215 \\
+      Years                   & 10               & 10               & 10                & 10 \\
+      Observations            & 24,851           & 23,745           & 18,634            & 19,622 \\
+      Adjusted R$^2$          & 0.681            & 0.979            & 0.832             & 0.907 \\
+      Within R$^2$            & 0.042            & 0.653            & 0.100             & 0.198 \\
+      \midrule \midrule & \tabularnewline
+   \end{tabular}
+
+   \par \raggedright
+   \textit{Notes:} The table reports the main full-control event-study specifications. The coefficients are treated-by-year interactions relative to the omitted reference year 2018. Standard errors are clustered by headquarters country (20 clusters) and appear in parentheses. The debt/assets coefficients are reported in ratio units; multiplying them by 100 gives effects in percentage points (pp). Coefficients for the other outcomes are in log points. $^{***}p<0.01$, $^{**}p<0.05$, and $^{*}p<0.10$.
+\end{table}

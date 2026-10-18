@@ -1,0 +1,34 @@
+# Restricted and externally supplied source data
+/R/data/raw/orbis/*
+!/R/data/raw/orbis/README.md
+/R/data/raw/covid/owid-covid-data.csv
+/R/data/raw/covid/OxCGRT_timeseries_StringencyIndex_v1.csv
+
+# New analysis outputs and R session state
+/R/results/generated/
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Private renv libraries and caches
+**/renv/library/
+**/renv/local/
+**/renv/cellar/
+**/renv/lock/
+**/renv/python/
+**/renv/sandbox/
+**/renv/staging/
+
+# Credentials and local configuration
+.env
+.env.*
+*.pem
+*.key
+
+# Editor and OS files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+__pycache__/

@@ -1,0 +1,17 @@
+* text=auto
+* whitespace=cr-at-eol
+.gitattributes text eol=lf
+.gitignore text eol=lf
+*.md text eol=lf
+*.cff text eol=lf
+*.bib text eol=lf
+# Preserve copied analysis files and frozen artifacts byte for byte.
+R/** -text
+R/**/*.md text eol=lf
+*.csv -text
+*.tex -text
+*.pdf binary
+*.xlsx binary
+# Preserve whitespace in the vendored bootstrap and submitted table artifacts.
+R/renv/activate.R -whitespace
+R/results/submitted/tables/** -whitespace

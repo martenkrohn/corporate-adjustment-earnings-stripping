@@ -1,0 +1,19 @@
+\begin{table}[H]
+    \caption{COVID-period sensitivity: timing restrictions and pandemic controls}
+    \label{tab:robustness_covid}
+    \centering
+    \small
+    \begin{tabular}{lccc}
+        \toprule
+        Outcome & Main model & Strict timing check & Deaths and Oxford jointly \\
+        \midrule
+        Debt-to-assets (pp) & -2.05\(^{***}\) & -1.50\(^{**}\) & -1.87\(^{***}\) \\
+                            & (0.68) & (0.63) & (0.63) \\
+        Adjusted EarnVol & -1.96\(^{*}\) & -0.54 & -2.13\(^{*}\) \\
+                         & (1.03) & (0.92) & (1.14) \\
+        Cash/assets (pp) & -0.39 & -0.42 & -0.25 \\
+                         & (0.68) & (0.58) & (0.63) \\
+        \bottomrule
+    \end{tabular}
+    \parbox{\textwidth}{\vspace{0.35em}\footnotesize\textit{Notes:} Country-clustered standard errors appear in parentheses. The strict timing check excludes 2020--2021 for debt-to-assets and cash/assets. For operational risk, it retains only forward volatility windows satisfying \(t+2<2020\). The joint model includes log confirmed deaths per million and the Oxford Stringency Index. Risk exposures are aggregated over \(t\) to \(t+2\). Firm and year fixed effects are retained. \(^{***}p<0.01\), \(^{**}p<0.05\), \(^{*}p<0.10\).}
+\end{table}

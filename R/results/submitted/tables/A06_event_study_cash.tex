@@ -1,0 +1,71 @@
+% Constructed from the approved baseline event-study outputs in
+% R/data/workspaces/05_cash_holdings/approved/models/.
+\begin{table}[H]
+   \caption{\label{tab:appendix_event_cash} Cash-holdings event-study regression}
+   \centering
+   \scriptsize
+   \begin{tabular}{lc}
+      \tabularnewline \midrule \midrule
+                              & Cash/assets \\
+      Model:                  & (1) \\
+      \midrule
+      \emph{Variables} \\
+      Treat $\times$ 2014     & -0.0056 \\
+                              & (0.0060) \\
+      Treat $\times$ 2015     & -0.0070 \\
+                              & (0.0066) \\
+      Treat $\times$ 2016     & 0.0004 \\
+                              & (0.0068) \\
+      Treat $\times$ 2017     & -0.0087 \\
+                              & (0.0062) \\
+      Treat $\times$ 2019     & -0.0029 \\
+                              & (0.0043) \\
+      Treat $\times$ 2020     & -0.0098 \\
+                              & (0.0110) \\
+      Treat $\times$ 2021     & -0.0050 \\
+                              & (0.0086) \\
+      Treat $\times$ 2022     & -0.0080 \\
+                              & (0.0080) \\
+      Treat $\times$ 2023     & -0.0129 \\
+                              & (0.0106) \\
+      Log assets              & -0.0104$^{***}$ \\
+                              & (0.0036) \\
+      EBIT/assets             & 0.0437$^{***}$ \\
+                              & (0.0106) \\
+      Tangibility             & -0.2293$^{***}$ \\
+                              & (0.0233) \\
+      Debt-to-assets          & -0.1194$^{***}$ \\
+                              & (0.0220) \\
+      Log sales growth        & -0.0049$^{***}$ \\
+                              & (0.0012) \\
+      Corporate tax rate      & -0.0016$^{***}$ \\
+                              & (0.0004) \\
+      GDP growth              & 0.0015$^{***}$ \\
+                              & (0.0005) \\
+      Inflation               & 0.0007 \\
+                              & (0.0017) \\
+      Long-term interest rate & 0.0033 \\
+                              & (0.0019) \\
+      Rule of law             & 0.0011 \\
+                              & (0.0011) \\
+      Regulatory quality      & 0.0005 \\
+                              & (0.0008) \\
+      Control of corruption   & 0.0003 \\
+                              & (0.0008) \\
+      \midrule
+      \emph{Fixed-effects} \\
+      Firm                    & Yes \\
+      Year                    & Yes \\
+      \midrule
+      \emph{Fit statistics} \\
+      Firms                   & 2,427 \\
+      Years                   & 10 \\
+      Observations            & 22,570 \\
+      Adjusted R$^2$          & 0.729 \\
+      Within R$^2$            & 0.070 \\
+      \midrule \midrule & \tabularnewline
+   \end{tabular}
+
+   \par \raggedright
+   \textit{Notes:} The table reports the main full-control event-study specification. The coefficients are treated-by-year interactions relative to the omitted reference year 2018. Standard errors are clustered by headquarters country (20 clusters) and appear in parentheses. Cash/assets coefficients are reported in ratio units; multiplying them by 100 gives effects in percentage points (pp). $^{***}p<0.01$, $^{**}p<0.05$, and $^{*}p<0.10$.
+\end{table}

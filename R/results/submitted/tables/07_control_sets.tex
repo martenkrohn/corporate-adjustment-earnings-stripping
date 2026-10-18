@@ -1,0 +1,29 @@
+\begin{table}[H]
+    \caption{Treatment-effect sensitivity across control sets}
+    \label{tab:robustness_control_sets}
+    \centering
+    \footnotesize
+    \begin{adjustbox}{max width=\textwidth}
+    \begin{tabular}{llrrrrrr}
+        \toprule
+        Outcome & Control set & Effect & SE & \(p\)-value & Observations & Firms & Countries \\
+        \midrule
+        \multicolumn{8}{l}{\textit{Panel A: Debt-to-assets (percentage points)}} \\
+        & Firm controls only & -2.78\(^{**}\) & 1.13 & 0.0223 & 25,527 & 2,728 & 22 \\
+        & No interest-rate control & -1.93\(^{**}\) & 0.70 & 0.0118 & 25,011 & 2,672 & 21 \\
+        & Full usable controls & -2.05\(^{***}\) & 0.68 & 0.0068 & 24,851 & 2,655 & 20 \\
+        \addlinespace
+        \multicolumn{8}{l}{\textit{Panel B: Adjusted earnings volatility}} \\
+        & Firm controls only & -1.67 & 1.00 & 0.1085 & 19,083 & 2,244 & 22 \\
+        & Firm plus macro/tax controls & -2.06\(^{**}\) & 0.97 & 0.0477 & 18,562 & 2,183 & 20 \\
+        & Full usable controls & -1.96\(^{*}\) & 1.03 & 0.0722 & 18,562 & 2,183 & 20 \\
+        \addlinespace
+        \multicolumn{8}{l}{\textit{Panel C: Cash/assets (percentage points)}} \\
+        & Firm controls only & -0.53 & 0.96 & 0.5843 & 23,172 & 2,491 & 22 \\
+        & Firm plus macro/tax controls & -0.30 & 0.71 & 0.6798 & 22,570 & 2,427 & 20 \\
+        & Full usable controls & -0.39 & 0.68 & 0.5720 & 22,570 & 2,427 & 20 \\
+        \bottomrule
+    \end{tabular}
+    \end{adjustbox}
+    \parbox{\textwidth}{\vspace{0.35em}\footnotesize\textit{Notes:} Every specification includes firm and year fixed effects and imposes outcome-specific complete-case and firm-level pre/post-support requirements. Standard errors are clustered by headquarters country. In Panel A, the firm-only model retains all 22 countries, the model without the interest-rate control excludes Cyprus, and the full-control model excludes Cyprus and Estonia. Effects for debt-to-assets and cash/assets are reported in percentage points. \(^{***}p<0.01\), \(^{**}p<0.05\), \(^{*}p<0.10\).}
+\end{table}

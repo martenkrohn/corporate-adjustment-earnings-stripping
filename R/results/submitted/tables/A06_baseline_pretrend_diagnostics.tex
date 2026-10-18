@@ -1,0 +1,28 @@
+% Constructed from the approved baseline event-study pre-trend outputs in
+% R/data/workspaces/{02_leverage_baseline,03_risk_taking,05_cash_holdings}/approved/models/.
+\begin{table}[htbp]
+    \caption{Joint pre-trend tests for baseline event studies}
+    \label{tab:appendix_baseline_pretrends}
+    \centering
+    \small
+    \begin{tabular}{lccrrr}
+        \toprule
+        Outcome & Omitted year & Tested years & Wald \(\chi^2\) & df & \(p\)-value \\
+        \midrule
+        \multicolumn{6}{l}{\textit{Capital structure}} \\
+        Debt-to-assets & 2018 & 2014--2017 & 6.043 & 4 & 0.1959 \\
+        Log equity & 2018 & 2014--2017 & 8.436 & 4 & 0.0768 \\
+        Log current debt & 2018 & 2014--2017 & 3.599 & 4 & 0.4630 \\
+        Log long-term debt & 2018 & 2014--2017 & 36.475 & 4 & \(<0.0001\) \\
+        \addlinespace
+        \multicolumn{6}{l}{\textit{Operational risk}} \\
+        Adjusted \textit{EarnVol} & 2016 & 2013--2015 & 6.658 & 3 & 0.0836 \\
+        Unadjusted \textit{EarnVol} & 2016 & 2013--2015 & 13.345 & 3 & 0.0039 \\
+        \addlinespace
+        \multicolumn{6}{l}{\textit{Cash holdings}} \\
+        Cash/assets & 2018 & 2014--2017 & 4.210 & 4 & 0.3783 \\
+        \bottomrule
+    \end{tabular}
+
+    \parbox{\textwidth}{\vspace{0.35em}\footnotesize\textit{Notes:} The table reports joint tests of whether the indicated pre-cutoff event-study coefficients equal zero relative to the omitted year. The models follow the corresponding baseline specifications, with inference clustered by headquarters country. For the operational-risk outcomes, the tested years mark the beginning of forward-looking three-year windows. A statistically insignificant result does not establish parallel trends.}
+\end{table}

@@ -1,0 +1,35 @@
+\begin{table}[H]
+    \caption{Matching and \acs{ATT}-reweighting estimates and diagnostics}
+    \label{tab:robustness_matching}
+    \centering
+    \footnotesize
+    \begin{adjustbox}{max width=\textwidth}
+    \begin{tabular}{lrrrrrr}
+        \toprule
+        \multicolumn{7}{l}{\textit{Panel A: Design and observed balance}} \\
+        \addlinespace
+        Outcome block & Anchor pool & Matched firms & Max. \acs{SMD}: raw & Max. \acs{SMD}: match & Max. \acs{SMD}: \acs{ATT} & Max. \acs{ATT} weight \\
+        \midrule
+        Leverage & 2,723 & 1,920 & 0.384 & 0.077 & 0.063 & 6.33 \\
+        Operational risk & 2,229 & 1,626 & 0.325 & 0.065 & 0.029 & 5.60 \\
+        Cash holdings & 2,470 & 1,718 & 0.360 & 0.112 & 0.050 & 7.13 \\
+        \addlinespace
+        \multicolumn{7}{l}{\textit{Panel B: Primary treatment estimates}} \\
+        & \multicolumn{2}{c}{Main model} & \multicolumn{2}{c}{\acs{PS} match} & \multicolumn{2}{c}{\acs{ATT}} \\
+        \cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+        & Estimate & SE & Estimate & SE & Estimate & SE \\
+        Debt-to-assets (pp) & -2.05\(^{***}\) & 0.68 & -1.43\(^{**}\) & 0.66 & -2.19\(^{***}\) & 0.60 \\
+        Adjusted EarnVol & -1.96\(^{*}\) & 1.03 & -1.85\(^{*}\) & 1.06 & -1.40 & 0.89 \\
+        Cash/assets (pp) & -0.39 & 0.68 & 0.00 & 0.71 & -0.41 & 0.70 \\
+        \addlinespace
+        \multicolumn{7}{l}{\textit{Panel C: Joint pre-trend test \(p\)-values}} \\
+        & \multicolumn{2}{c}{Main model} & \multicolumn{2}{c}{\acs{PS} match} & \multicolumn{2}{c}{\acs{ATT}} \\
+        \cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+        Debt-to-assets & \multicolumn{2}{c}{0.1959} & \multicolumn{2}{c}{0.3700} & \multicolumn{2}{c}{0.3645} \\
+        Adjusted EarnVol & \multicolumn{2}{c}{0.0836} & \multicolumn{2}{c}{0.0034} & \multicolumn{2}{c}{0.0265} \\
+        Cash/assets & \multicolumn{2}{c}{0.3783} & \multicolumn{2}{c}{0.0810} & \multicolumn{2}{c}{0.0614} \\
+        \bottomrule
+    \end{tabular}
+    \end{adjustbox}
+    \parbox{\textwidth}{\vspace{0.35em}\footnotesize\textit{Notes:} SE denotes standard error. ``Main model'' denotes the corresponding unmatched specification reported in Section~\ref{sec:results}. The selected propensity-score design is 1:1 nearest-neighbor matching without replacement and with a 0.001 caliper. \acs{ATT} weights equal one for treated firms and \(\widehat p_i/(1-\widehat p_i)\) for controls. Leverage and cash use 2018 anchor samples; operational risk uses 2016. The balance statistic is the maximum absolute standardized mean difference across the matching covariates. Regression samples again impose outcome-specific complete cases and firm-level pre/post support. Effects for ratio outcomes are in percentage points. \(^{***}p<0.01\), \(^{**}p<0.05\), \(^{*}p<0.10\).}
+\end{table}

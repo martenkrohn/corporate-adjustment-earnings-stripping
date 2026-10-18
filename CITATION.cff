@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Please cite the thesis when referring to this research."
+type: software
+title: "Corporate Adjustment Beyond Leverage: Evidence from European Firms under Earnings-Stripping Rules"
+authors:
+  - family-names: Krohn
+    given-names: Arne Marten
+    affiliation: "University of Münster"
+abstract: >-
+  Master's thesis and R analysis of corporate financing, forward earnings
+  volatility, and cash holdings under European earnings-stripping rules.
+keywords:
+  - corporate finance
+  - applied econometrics
+  - difference-in-differences
+  - earnings-stripping rules
+  - R
+preferred-citation:
+  type: thesis
+  title: "Corporate Adjustment Beyond Leverage: Evidence from European Firms under Earnings-Stripping Rules"
+  authors:
+    - family-names: Krohn
+      given-names: Arne Marten
+  year: 2026
+  institution:
+    name: "University of Münster"
+  thesis-type: "Master's thesis in Economics"
